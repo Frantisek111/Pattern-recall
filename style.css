@@ -1,0 +1,29 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 32rem;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-width: 18rem;
+  margin-top: 1rem;
+}
+
+.cell {
+  aspect-ratio: 1;
+  font: inherit;
+  border: 2px solid #50616f;
+  border-radius: 8px;
+  background: #eef4f8;
+  color: #17242e;
+}
+
+.cell.lit { background: #f8c66e; }
+.cell.chosen { background: #a8d4ff; }
+.cell.correct { background: #a6e2b2; }
+.cell.missed { border-style: dashed; }
+.cell.wrong { background: #ffc4bd; }
